@@ -1,1 +1,1 @@
-Add rules for bitbucket.org to default revlink helpers.
+Add rules for Bitbucket to default revlink helpers.

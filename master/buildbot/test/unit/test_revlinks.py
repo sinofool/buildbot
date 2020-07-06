@@ -120,11 +120,13 @@ class TestBitbucketRevlink(unittest.TestCase):
     url = 'https://bitbucket.org/fakeproj/fakerepo/commits/4d4284cf4fb49ce82fefb6cbac8e462073c5f106'
 
     def testHTTPS(self):
-        self.assertEqual(BitbucketRevlink(self.revision, 'https://fakeuser@bitbucket.org/fakeproj/fakerepo.git'),
+        self.assertEqual(BitbucketRevlink(self.revision,
+                         'https://fakeuser@bitbucket.org/fakeproj/fakerepo.git'),
                          self.url)
 
     def testSSH(self):
-        self.assertEqual(BitbucketRevlink(self.revision, 'git@bitbucket.org:fakeproj/fakerepo.git'),
+        self.assertEqual(BitbucketRevlink(self.revision,
+                         'git@bitbucket.org:fakeproj/fakerepo.git'),
                          self.url)
 
 

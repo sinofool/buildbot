@@ -42,7 +42,7 @@ GithubRevlink = RevlinkMatch(
 
 
 BitbucketRevlink = RevlinkMatch(
-        repo_urls=[r'https://[^@]*@bitbucket.org/([^/]*)/([^/]*?)(?:\.git)?$', 
+        repo_urls=[r'https://[^@]*@bitbucket.org/([^/]*)/([^/]*?)(?:\.git)?$',
                    r'git@bitbucket.org:([^/]*)/([^/]*?)(?:\.git)?$'],
         revlink=r'https://bitbucket.org/\1/\2/commits/%s')
 
